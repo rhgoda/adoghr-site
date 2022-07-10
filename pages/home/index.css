@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,600&display=swap%27');
+body {
+    background: linear-gradient(to top, rgb(86, 0, 0), red);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Finlandica', serif, sans-serif;
+}
+
+header, a {
+    padding: 0em 1em;
+    color: white;
+    text-shadow: rgb(86, 0, 0) 4px 4px 3px;
+}

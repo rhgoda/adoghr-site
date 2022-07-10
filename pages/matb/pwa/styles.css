@@ -1,0 +1,14 @@
+.bepis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Comic Sans MS', Arial, sans-serif, serif;
+    text-shadow: 5px 3px pink;
+}
+html, body {
+    margin: 0;
+    padding: 0;  
+}
