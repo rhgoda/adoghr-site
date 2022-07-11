@@ -42,7 +42,7 @@ bot.launch()
 function update() {
   try {
     (async () => {
-      const browser = await puppeteer.launch()//({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+      const browser = await puppeteer.launch({args: ['--no-sandbox']})//({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
       const page = await browser.newPage();
       await page.goto('https://aliexpress.ru/item/1005002907849570.html?spm=a2g2w.productlist.i3.2.7f6125a4zfKXg2&sku_id=12000022722268689');
       //await page.goto('https://yandex.com');

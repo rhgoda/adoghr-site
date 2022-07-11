@@ -20,3 +20,7 @@ header, a {
     color: white;
     text-shadow: rgb(86, 0, 0) 4px 4px 3px;
 }
+
+header {
+    font-size: 2em;
+}
