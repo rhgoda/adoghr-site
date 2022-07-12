@@ -7,25 +7,24 @@
 }
 
 body {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
+  color: #ff3e00;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 2rem auto;
 }
 
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
+  font-weight: 100;
+  line-height: 1.1;
+  margin: 2rem auto;
+  line-height: 1.5;
 }
 
 .test {
