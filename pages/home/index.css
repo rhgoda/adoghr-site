@@ -21,6 +21,10 @@ header, a {
     text-shadow: rgb(86, 0, 0) 4px 4px 3px;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     font-size: 2em;
 }

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
+:root {
+  font-family: 'EB Garamond', serif;
+  background-color: #F9FCEE;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #ff3e00;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.1;
+    margin: 2rem auto;
+    max-width: 14rem;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.1;
+    margin: 2rem auto;
+}
+
+.test {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.dqu {
+  background-color: #DDEDAA;
+  color: #BD4F6C;
+}
+
+.dollar {
+  background-color: #DDEDAA;
+  color: #BD4F6C;
+}
+
+.btc {
+  background-color: #F0CF65;
+  color: #BD4F6C;
+}
+
+
+img {
+  height: 16rem;
+  width: 16rem;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    max-width: none;
+  }
+
+  p {
+    max-width: none;
+  }
+}

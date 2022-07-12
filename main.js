@@ -25,13 +25,12 @@ fs.readdirSync(path.join(__dirname, '/pages'))
           console.log('Pages loading error \n', e)
       }
     }
-  });
+});
 
 app.get('*', function(req, res, next) {
   let subdomain = (req.subdomains[0] === undefined) ? "home" : req.subdomains[0];
   let reqpath = path.join(__dirname, '/pages/', subdomain, req.url);
   reqpath = reqpath.replace("..", "");
-
   fs.promises.access(reqpath, fs.constants.F_OK)
     .then(() => 
       res.sendFile(reqpath)
