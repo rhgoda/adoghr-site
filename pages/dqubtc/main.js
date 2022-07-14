@@ -15,6 +15,6 @@ let price = fetch("/api/price")
         let text = (oldPrice < pric * btc) ? "ЗАРАБОТАЛ" : "ПРОЕБАЛ";
         let chng = (oldPrice < pric * btc) ? "ПОДНЯЛСЯ" : "УПАЛ";
         document.getElementById('text').innerText = text;
-        document.getElementById('chng').innerText = cng;
+        document.getElementById('chng').innerText = chng;
         document.getElementById('waste').innerText = doRound(btc*(oldPrice - pric));
     })
