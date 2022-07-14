@@ -11,8 +11,10 @@ let price = fetch("/api/price")
     .then((pric) => {
         document.getElementById('bought').innerText = btc;
         document.getElementById('spent').innerText = spent;
-        document.getElementById('percent').innerText = doRound((1-oldPrice/pric)*100);
+        document.getElementById('percent').innerText = Math.abs(doRound((1-oldPrice/pric)*100));
         let text = (oldPrice < pric * btc) ? "ЗАРАБОТАЛ" : "ПРОЕБАЛ";
+        let chng = (oldPrice < pric * btc) ? "ПОДНЯЛСЯ" : "УПАЛ";
         document.getElementById('text').innerText = text;
+        document.getElementById('chng').innerText = cng;
         document.getElementById('waste').innerText = doRound(btc*(oldPrice - pric));
     })

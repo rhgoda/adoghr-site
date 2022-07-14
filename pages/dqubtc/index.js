@@ -20,7 +20,7 @@ function update(){
 }
 
 update()
-setTimeout(update, 60000)
+setInterval(update, 60000)
 
 let router = express.Router();
 
