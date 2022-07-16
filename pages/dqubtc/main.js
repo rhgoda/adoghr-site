@@ -16,5 +16,5 @@ let price = fetch("/api/price")
         let chng = (oldPrice < pric) ? "ПОДНЯЛСЯ" : "УПАЛ";
         document.getElementById('text').innerText = text;
         document.getElementById('chng').innerText = chng;
-        document.getElementById('waste').innerText = doRound(btc*(oldPrice - pric));
+        document.getElementById('waste').innerText = Math.abs(doRound(btc*(oldPrice - pric)));
     })
