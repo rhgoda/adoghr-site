@@ -10,6 +10,7 @@ async function request() {
     return await fetch(apiurl)
         .then((resp) => resp.json())
         .then((json) => Math.round(json["data"]["1"]["quote"]["USD"]["price"]))
+        .catch(() => console.log('dqubtc request error'))
 }
 
 let price = 0
